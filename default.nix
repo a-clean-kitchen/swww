@@ -24,13 +24,15 @@ naersk.lib."${targetPlatform.system}".buildPackage rec {
     cargo
     rustc
     libiconv
+    libxkbcommon
   ];
-  checkInputs = [ cargo rustc ];
+  checkInputs = [ cargo rustc libxkbcommon ];
 
   doCheck = true;
   CARGO_BUILD_INCREMENTAL = "false";
   RUST_BACKTRACE = "full";
   copyLibs = true;
+  XKBCOMMON_NO_PKG_CONFIG = "1";
 
   name = cargoToml.package.name;
   version = cargoToml.package.version;
