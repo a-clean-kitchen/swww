@@ -3,6 +3,7 @@ name = "swww"
 version = "0.6.0"
 authors = ["Leonardo Gibrowski Faé <leonardo.fae44@gmail.com>"]
 edition = "2021"
+description = "load wallpapers from somewhere idk"
 
 [profile.release]
 debug = 0
