@@ -9,6 +9,7 @@
 , rustfmt
 , cargo
 , rustc
+, libxkbcommon
 }:
 
 let
