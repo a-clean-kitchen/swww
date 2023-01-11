@@ -33,7 +33,7 @@ naersk.lib."${targetPlatform.system}".buildPackage rec {
   CARGO_BUILD_INCREMENTAL = "false";
   RUST_BACKTRACE = "full";
   copyLibs = true;
-  XKBCOMMON_NO_PKG_CONFIG = "1";
+  # XKBCOMMON_NO_PKG_CONFIG = "1";
 
   name = cargoToml.package.name;
   version = cargoToml.package.version;
